@@ -1,13 +1,12 @@
 /* eslint-disable react/jsx-no-undef */
-import React, {Component, useState} from 'react';
+import React, {useState} from 'react';
 import {
-  View,
-  Text,
-  StyleSheet,
   Dimensions,
   StatusBar,
+  StyleSheet,
+  Text,
   TouchableOpacity,
-  SafeAreaView,
+  View,
 } from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import Ionicons from 'react-native-vector-icons/Ionicons';

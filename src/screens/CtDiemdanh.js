@@ -1,19 +1,19 @@
 import React, {useState} from 'react';
 import {
-  View,
-  Text,
-  StyleSheet,
   Dimensions,
   StatusBar,
+  StyleSheet,
+  Text,
   TouchableOpacity,
+  View,
 } from 'react-native';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import {useSafeArea, useSafeAreaInsets} from 'react-native-safe-area-context';
-import Ic_qr from '../themes/Ic_qr';
-import Ic_search from '../themes/Ic_search';
+import Item_ctdiemdanh from '../Item/Item_ctdiemdanh';
 import Ic_lop from '../themes/Ic_lop';
 import Ic_mon from '../themes/Ic_mon';
-import Item_ctdiemdanh from '../Item/Item_ctdiemdanh';
+import Ic_qr from '../themes/Ic_qr';
+import Ic_search from '../themes/Ic_search';
 
 export default function CtDiemdanh({navigation: {goBack}}) {
   const insets = useSafeAreaInsets();
@@ -82,10 +82,10 @@ export default function CtDiemdanh({navigation: {goBack}}) {
         </View>
         <Text style={{marginRight: 20}} />
       </View>
-      <View style={styles.container4} >
-          <Item_ctdiemdanh />
+      <View style={styles.container4}>
+        <Item_ctdiemdanh />
       </View>
-    </View> 
+    </View>
   );
 }
 

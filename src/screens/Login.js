@@ -1,20 +1,19 @@
 import * as React from 'react';
 import {
-  View,
-  Text,
-  Button,
+  Dimensions,
   Image,
-  StyleSheet,
   SafeAreaView,
   StatusBar,
-  Dimensions,
+  StyleSheet,
+  Text,
+  View,
 } from 'react-native';
-
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import Bg_log from '../themes/Bg_log';
 import Icon from '../themes/Icon';
 import Icon_Gg from '../themes/Icon_Gg';
 import Icon_next from '../themes/Icon_next';
+
 console.disableYellowBox = true;
 
 function Login({navigation}) {

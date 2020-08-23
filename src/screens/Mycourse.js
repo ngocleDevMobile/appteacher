@@ -2,21 +2,20 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useRef, useState} from 'react';
 import {
-  View,
-  Text,
-  StyleSheet,
   Dimensions,
-  StatusBar,
   FlatList,
-  TouchableOpacity,
   SafeAreaView,
-  Platform,
+  StatusBar,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import Ic_clock from '../themes/Ic_clock';
-import Item_mycourse from '../Item/Item_mycourse';
 import RBSheet from 'react-native-raw-bottom-sheet';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import Item_mycourse from '../Item/Item_mycourse';
+import Ic_clock from '../themes/Ic_clock';
 
 export default function Mycourse({navigation: {goBack}}) {
   const insets = useSafeAreaInsets();

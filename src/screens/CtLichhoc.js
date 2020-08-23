@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import {
-  View,
-  Text,
-  StyleSheet,
   Dimensions,
   StatusBar,
+  StyleSheet,
+  Text,
   TouchableOpacity,
+  View,
 } from 'react-native';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import {useSafeArea, useSafeAreaInsets} from 'react-native-safe-area-context';
 import Item_ctlh from '../Item/Item_ctlh';
 
 export default function CtLichhoc({navigation: {goBack}}) {
@@ -57,13 +57,15 @@ export default function CtLichhoc({navigation: {goBack}}) {
                 height: 8,
                 borderRadius: 4,
                 backgroundColor: '#F59525',
-                marginTop: 4
+                marginTop: 4,
               }}
             />
           </View>
           <View style={{flexDirection: 'column', marginLeft: 10}}>
             <Text style={{color: '#F59525', fontSize: 11}}>Lớp - LT14305</Text>
-            <Text style={{color: 'black', fontSize: 15}}>Quản lý dự án với phần mềm Agile</Text>
+            <Text style={{color: 'black', fontSize: 15}}>
+              Quản lý dự án với phần mềm Agile
+            </Text>
           </View>
         </View>
         <Text style={{marginRight: 20}} />

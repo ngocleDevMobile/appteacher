@@ -1,17 +1,18 @@
 import React, {useState} from 'react';
 import {
-  View,
-  Text,
-  FlatList,
   Dimensions,
-  StyleSheet,
+  FlatList,
   Image,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
 } from 'react-native';
-import Ic_nc from '../themes/Ic_nx';
-import Icon_qr from '../themes/Ic_qr';
 import {TouchableOpacity} from 'react-native-gesture-handler';
+import {useNavigation} from '@react-navigation/native';
 
 export default function Item_open() {
+  const navigation = useNavigation();
   const itemData = [
     {
       id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28bas',
@@ -86,10 +87,12 @@ export default function Item_open() {
                   justifyContent: 'center',
                   paddingRight: 10,
                 }}>
-                <Image
-                  style={{width: 30, height: 30}}
-                  source={require('../assets/images/qr-code.png')}
-                />
+                <Pressable onPress={() => navigation.navigate('QRscreen')}>
+                  <Image
+                    style={{width: 30, height: 30}}
+                    source={require('../assets/images/qr-code.png')}
+                  />
+                </Pressable>
               </View>
             </TouchableOpacity>
           );

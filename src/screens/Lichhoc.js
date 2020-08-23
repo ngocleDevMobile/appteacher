@@ -48,13 +48,13 @@ export default function Lichhoc({navigation: {goBack, navigate}}) {
               backgroundColor: '#F59525',
             }}
           />
-          <View style={{flexDirection: 'column', marginLeft: 10,}}>
+          <View style={{flexDirection: 'column', marginLeft: 10}}>
             <Text style={{color: '#F59525', fontSize: 11}}>Học kỳ</Text>
             <Text style={{color: 'black', fontSize: 15}}>Summer 2020</Text>
           </View>
         </View>
         <View style={styles.class}>
-        <View
+          <View
             style={{
               width: 10,
               height: 10,
@@ -62,7 +62,7 @@ export default function Lichhoc({navigation: {goBack, navigate}}) {
               backgroundColor: '#F59525',
             }}
           />
-          <View style={{flexDirection: 'column', marginLeft: 10,}}>
+          <View style={{flexDirection: 'column', marginLeft: 10}}>
             <Text style={{color: '#F59525', fontSize: 11}}>Học kỳ</Text>
             <Text style={{color: 'black', fontSize: 15}}>Summer 2020</Text>
           </View>
@@ -71,7 +71,7 @@ export default function Lichhoc({navigation: {goBack, navigate}}) {
       </View>
       <View style={styles.container4}>
         <Item_lichhoc nextScreen={() => navigate('CtLichhoc')} />
-        </View>
+      </View>
     </View>
   );
 }

@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import {
-  View,
-  Text,
-  StyleSheet,
   Dimensions,
   StatusBar,
+  StyleSheet,
+  Text,
   TouchableOpacity,
+  View,
 } from 'react-native';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import {useSafeArea, useSafeAreaInsets} from 'react-native-safe-area-context';
 import Item_feedback from '../Item/Item_feedback';
 
 export default function Feedback({navigation: {goBack}}) {

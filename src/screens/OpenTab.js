@@ -1,17 +1,16 @@
+import {useNavigation} from '@react-navigation/native';
 import * as React from 'react';
-import Images from 'react-native-remote-svg';
 import {
-  View,
-  StyleSheet,
   Dimensions,
-  StatusBar,
-  Text,
-  ScrollView,
   Image,
   SafeAreaView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
 } from 'react-native';
+import Images from 'react-native-remote-svg';
 import Item_open from '../Item/Item_open';
-import {useNavigation} from '@react-navigation/native';
 
 export default function ProfileTab() {
   const navigation = useNavigation();
@@ -68,7 +67,7 @@ export default function ProfileTab() {
             03/07/2020
           </Text>
         </View>
-        <View style={{marginTop: 20,}}>
+        <View style={{marginTop: 20}}>
           <Item_open />
         </View>
       </View>
